@@ -31,8 +31,19 @@ article.contact-card {
   }
 }
 
-.greeting {
+.greeting, .random {
   border: 1px solid #000;
   padding: 0.5rem;
   margin: 1rem 1rem;
+}
+.box-color {
+  border: 1px solid #000;
+  min-height: 9rem;
+  padding: 0.5rem;
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;;
 }

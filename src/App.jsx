@@ -1,11 +1,13 @@
 import "./App.css";
 import IdCard from "./components/IdCard";
 import Greetings from "./components/Greetings";
+import Random from "./components/Random";
+import BoxColor from "./components/BoxColor";
 
 function App() {
 	return (
 		<div className="App">
-			<h1> LAB | React Training hep</h1>
+			<h1> LAB | React Training</h1>
 
 			<IdCard
 				lastName="Doe"
@@ -28,6 +30,11 @@ function App() {
 			<Greetings lang="fr">Marta</Greetings> 
 			{/* https://reacttraining.com/blog/jsx-the-confusing-parts#children-props */}
 			<Greetings lang="de">John</Greetings>
+
+			<Random min={1} max={8}  />
+			<BoxColor color={[255,0,0]} />
+			<BoxColor color={[128,255,0]} />
+			
 		</div>
 	);
 }
