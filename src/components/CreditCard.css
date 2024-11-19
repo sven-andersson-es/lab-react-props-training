@@ -1,0 +1,43 @@
+.cc-cards {
+    margin: 3rem 1rem ;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.cc {
+    width: 260px;
+    height: 140px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .cc-logo {
+        text-align: right;
+        img {
+            width: 36px
+        }
+    }
+    .cc-number {
+        display: flex;
+        justify-content: row;
+        align-items: center;
+        gap: 8px;
+        span {
+            font-size: 10px;
+            &:last-child {
+                font-size: 20px;
+            }
+        }
+    }
+    .cc-expiration {
+        font-size: 12px;
+        margin-bottom: 4px;
+        span {
+            margin-right: 12px;
+        }
+    }
+    .cc-name {
+        font-size: 12px;;
+    }
+}

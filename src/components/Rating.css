@@ -1,0 +1,44 @@
+.ratings {
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+.stars {
+    display: flex;
+    gap: 0.2rem;
+}
+.star {
+    width: 40px;
+    aspect-ratio: 1;
+    background: #ccc;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+    &[rating="1"]:first-child,
+    &[rating="2"]:first-child,
+    &[rating="3"]:first-child,
+    &[rating="4"]:first-child,
+    &[rating="5"]:first-child {
+        background: black;
+    }
+    &[rating="2"]:nth-child(2),
+    &[rating="3"]:nth-child(2),
+    &[rating="4"]:nth-child(2),
+    &[rating="5"]:nth-child(2) {
+        background: black;
+    }
+    &[rating="3"]:nth-child(3),
+    &[rating="4"]:nth-child(3),
+    &[rating="5"]:nth-child(3) {
+        background: black;
+    }
+    &[rating="4"]:nth-child(4),
+    &[rating="5"]:nth-child(4) {
+        background: black;
+    }
+    &[rating="5"]:nth-child(5) {
+        background: black;
+    }
+  }
