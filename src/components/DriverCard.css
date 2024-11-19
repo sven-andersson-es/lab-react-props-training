@@ -1,0 +1,52 @@
+.driver-card {
+	margin: 2rem 1rem;
+	padding: 1rem;
+	max-width: 40rem;
+	border-radius: 0.6rem;
+	background-color: #455eb5;
+	display: flex;
+	justify-content: center;
+	gap: 0.8rem;
+	color: #fff;
+	.driver-image {
+		img {
+			width: 5rem;
+			height: 5rem;
+			object-fit: cover;
+			object-position: center;
+			border-radius: 50%;
+		}
+	}
+	.driver-contact {
+		.driver.stars .star {
+			width: 26px;
+			background-color: #999;
+			margin: 4px 0;
+			&[rating="1"]:first-child,
+			&[rating="2"]:first-child,
+			&[rating="3"]:first-child,
+			&[rating="4"]:first-child,
+			&[rating="5"]:first-child {
+				background: white;
+			}
+			&[rating="2"]:nth-child(2),
+			&[rating="3"]:nth-child(2),
+			&[rating="4"]:nth-child(2),
+			&[rating="5"]:nth-child(2) {
+				background: white;
+			}
+			&[rating="3"]:nth-child(3),
+			&[rating="4"]:nth-child(3),
+			&[rating="5"]:nth-child(3) {
+				background: white;
+			}
+			&[rating="4"]:nth-child(4),
+			&[rating="5"]:nth-child(4) {
+				background: white;
+			}
+			&[rating="5"]:nth-child(5) {
+				background: white;
+			}
+		}
+	}
+}

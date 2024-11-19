@@ -5,7 +5,7 @@ export default function Rating(props) {
 	};
 
 	return (
-		<div className="stars">
+		<div className={`${props.style ? props.style : ""} stars`}>
 			{[...Array(5)].map((o,i) => {
 				return <div key={i} role="img" className="star" rating={starRating(props.children)}></div>
 			})}
